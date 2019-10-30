@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_screen.dart';
 
 void main() => runApp(Homepage());
 
@@ -31,6 +32,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   image: AssetImage('assets/background.png'),
                   width: size.width,
                   height: size.height,
+//
+//        alignment:MainAxisAlignment.center,
                   fit: BoxFit.fill)),
           Positioned(
             top: -90,
@@ -83,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => LoginPage(
-                            action: -1,
+
                           )),
                 );
               },  
@@ -116,3 +119,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
